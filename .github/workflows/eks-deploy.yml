@@ -27,8 +27,8 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          username: ${{ secrets.vishasingh800 }}
+          password: ${{ secrets.dckr_pat_4S0VnB8H8CJ0VttKpn7f3vi_iXk }}
 
       # Step 4: Build and Push Docker Image
       - name: Build and Push Docker Image
@@ -40,8 +40,8 @@ jobs:
       - name: Configure AWS CLI
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.AKIASSUMWS6OGSQ32XPB }}
+          aws-secret-access-key: ${{ secrets.VVIcM53kzhJzQRj4pkASeMWuxZ8bTzSCTudS7ISA }}
           aws-region: us-east-1
 
       # Step 6: Update kubeconfig
