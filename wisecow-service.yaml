@@ -10,4 +10,4 @@ spec:
       port: 4499
       targetPort: 4499
       nodePort: 30001
-  type: NodePort        
+  type: LoadBalancer        
